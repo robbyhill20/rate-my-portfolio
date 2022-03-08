@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'rate-my-portfolio-1.herokuapp.com',
+  process.env.MONGODB_URI || 'mongodb://localhost/rate-my-portfolio-app',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -10,4 +10,4 @@ mongoose.connect(
   }
 );
 
-module.exports = mongoose.connection;
+module.exports = mongoose.connection;ion;
